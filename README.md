@@ -27,6 +27,7 @@ Instale os pacotes necessários usando o `pip`:
 
 ```bash
 pip install selenium undetected-chromedriver requests
+```
 
 # Como Usar e Detalhes do Código
 
