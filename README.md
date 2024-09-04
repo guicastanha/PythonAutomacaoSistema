@@ -27,3 +27,40 @@ Instale os pacotes necessários usando o `pip`:
 
 ```bash
 pip install selenium undetected-chromedriver requests
+
+# Como Usar e Detalhes do Código
+
+## 🛠️ Como Usar
+
+1. **Configuração**: Substitua as credenciais e informações do usuário conforme necessário no script.
+
+2. **Execução**: Execute o script principal. Certifique-se de que o `chromedriver` esteja corretamente configurado.
+
+    ```bash
+    python seu_script.py
+    ```
+
+3. **Observação**: O script irá abrir o navegador, realizar o login e adicionar o usuário especificado.
+
+## 🔍 Detalhes do Código
+
+1. **Função `JuntaNome`**
+
+   Constrói um e-mail com base no nome completo do usuário.
+
+2. **Função `get_company_email`**
+
+   Gera um e-mail para a empresa especificada.
+
+3. **Classe `SistemaProOcupacional`**
+
+   - **Método `__init__`**: Inicializa o driver do Chrome e configura as credenciais.
+   - **Método `logar_sistema`**: Realiza o login no sistema.
+   - **Método `add_usuario_sistema`**: Adiciona um novo usuário no sistema.
+   - **Método `finalizar`**: Fecha o navegador após a execução.
+
+## 📜 Notas Adicionais
+
+- Certifique-se de que o `chromedriver` é compatível com a versão do seu navegador Chrome.
+- O script inclui um tempo de espera (`sleep`) que pode precisar ser ajustado com base na velocidade da sua conexão e resposta do sistema.
+
